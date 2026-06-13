@@ -1,0 +1,1 @@
+Ext.define('Rg.be.config.autorun.FormController',{extend:'Ge.view.form.PanelController',alias:'controller.rg-be-config-autorun-form',keydownRoute:function(a,e,c){this.getViewCmp('modules').setValue(a.value)},selectModule:function(A,b,_){this.getViewCmp('route').setValue(b.get('route'))}});
