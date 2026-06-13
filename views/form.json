@@ -1,0 +1,45 @@
+[
+    {
+        "xtype": "numberfield",
+        "fieldLabel": "#Index",
+        "tooltip": "#Index number",
+        "name": "index",
+        "minValue": 1,
+        "value": 1,
+        "width": 240,
+        "allowBlank": false
+    },
+    {
+        "xtype": "numberfield",
+        "fieldLabel": "#Priority",
+        "tooltip": "#Priority of the extension to run (if the user has multiple roles)",
+        "name": "priority",
+        "minValue": 1,
+        "value": 1,
+        "width": 240,
+        "allowBlank": false
+    },
+    "@rolesCombobox",
+    "@moduleCombobox",
+    {
+        "id": "rg-config-autorun-form__route",
+        "xtype": "textfield",
+        "fieldLabel": "#Route",
+        "tooltip": "#Launched extension route",
+        "maxLength": 255,
+        "anchor": "100%",
+        "name": "route",
+        "allowBlank": false,
+        "enableKeyEvents": true,
+        "listeners": {
+            "keyup": "keydownRoute"
+        }
+    },
+    {
+        "xtype": "checkbox",
+        "ui": "switch",
+        "fieldLabel": "#Add to autorun",
+        "name": "enabled",
+        "checked": true
+    }
+]
