@@ -1,7 +1,7 @@
 {
     "name": "rosgear/rg-be-config-autorun",
-    "description": "Extension (module) \"Autorun\" for the GePanel Control Panel",
-    "keywords": ["rosgear", "gepanel", "extension (module)"],
+    "description": "Module extension \"Autorun\" for the GePanel Control Panel",
+    "keywords": ["rosgear", "gepanel", "module", "extension"],
     "homepage": "https://rosgear.ru/component/rg-be-config-autorun/",
     "type": "component",
     "license": "MIT",
