@@ -12,8 +12,8 @@
 return [
     'name'        => 'Autorun',
     'description' => 'Autorun control panel extensions',
-    'version'     => '1.0',
-    'versionDate' => '20-12-2017',
+    'version'     => '1.0.1',
+    'versionDate' => '20-10-2026',
     'author'      => 'RosGear',
     'authorUrl'   => 'https://rosgear.ru/',
     'email'       => 'info@rosgear.ru',
