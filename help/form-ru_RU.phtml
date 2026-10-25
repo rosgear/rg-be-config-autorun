@@ -1,6 +1,6 @@
 <?php
 /**
- * Страница "Форма редактирования автозапуска".
+ * Страница "Форма добавления / редактирования автозапуска".
  * 
  * Русская локализации.
  * 
@@ -11,18 +11,18 @@
  */
 ?>
 <article>
-    <h1>Форма редактирования автозапуска</h1>
+    <h1>Форма добавления / редактирования автозапуска</h1>
     <div class="g-help-screen g-help-screen--hidable">
         <img src="<?= $assetsUrl, '/help/form.png' ?>" />
     </div>
-    <p>Форма появляется после нажатия на кнопку <b>"Добавить"</b> панели инструментов списка автозапуска или выбора пункта <b>"Редактировать"</b> контекстного меню выбранной записи.</p>
+    <p>Форма появляется после нажатия на кнопку <b>"Добавить"</b> панели инструментов <a href="<?= $url('grid') ?>">списка автозапуска</a> или выбора пункта <b>"Редактировать"</b> контекстного меню выбранной записи.</p>
     <h2>Поля формы</h2>
     <ul class="g-help-list">
-        <li><b>Порядок.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Приоритет.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Роль пользователя.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Модуль.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Маршрут.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</li>
-        <li><b>Добавить в автозапуск.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</li>
+        <li><span class="g-help-fld g-help-fld_spinner"></span> <b>Порядок.</b> Порядковый номер компонента в списке запуска, определяющий последовательность инициализации для заданной роли пользователя;</li>
+        <li><span class="g-help-fld g-help-fld_spinner"></span> <b>Приоритет.</b> Приоритет определяет очерёдность запуска компонентов в случае совпадения их порядковых номеров для заданной роли пользователя;</li>
+        <li><span class="g-help-fld g-help-fld_combo"></span> <b>Роль пользователя.</b> Роль пользователя, на основе которой система формирует список запускаемых компонентов веб‑приложения;</li>
+        <li><span class="g-help-fld g-help-fld_combo"></span> <b>Модуль / Расширение.</b> Имя компонента для запуска: модуль или расширение модуля.</li>
+        <li><span class="g-help-fld g-help-fld_text"></span> <b>Маршрут.</b> Маршрут запуска компонента веб‑приложения — путь (URL/route), по которому инициируется компонент. Значение подставляется автоматически при выборе модуля или расширения модуля; допускается ручное переопределение маршрута.;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Добавить в автозапуск.</b> Если установлен флаг, то текущий компонент будет запускаться каждый раз после авторизации пользователя в Панели управления с указанной ролью.</li>
     </ul>
 </article>

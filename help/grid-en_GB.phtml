@@ -1,0 +1,42 @@
+<?php
+/**
+ * Страница "Список автозапуска".
+ * 
+ * Английская (британская) локализация.
+ * 
+ * Этот файл является частью расширения модуля веб-приложения RosGear.
+ * 
+ * @copyright Copyright (c) 2015 RosGear
+ * @license https://rosgear.ru/license/
+ */
+?>
+<article>
+    <h1>Autorun list</h1>
+    <div class="g-help-screen g-help-screen--hidable">
+        <img src="<?= $assetsUrl, '/help/grid.png' ?>" />
+    </div>
+    <p>The list displays web application components (modules and module extensions) with routes that are triggered after a user logs in to the Control Panel.</p>
+    <h2>List columns</h2>
+    <ul class="g-help-list">
+        <li><b>User Role.</b> The user role based on which the system generates a list of web application components to be launched.</li>
+        <li><b>Order.</b> The ordinal number of a component in the launch list, which determines the initialization sequence for a given user role.</li>
+        <li><b>Priority.</b> The priority determines the launch sequence of components in cases where their ordinal numbers are the same for a given user role.</li>
+        <li><b>Route.</b> The launch route for a web application component.</li>
+        <li><b>Component Type.</b> The type of the component being launched; indicates whether the item is an independent module or a module extension.</li>
+        <li><b>Module / Extension.</b> The name of the component to be launched: either a module or a module extension.</li>
+        <li><b>Enabled.</b> If this flag is set, the component will be launched every time a user with the specified role logs into the Control Panel.</li>
+    </ul>
+
+    <h2>Toolbar</h2>
+    <ul class="g-help-list">
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/widgets/images/grid/grid-add.svg' ?>" /> <b>Add.</b> Opens a form to add a component to the autorun list;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/widgets/images/grid/grid-delete.svg' ?>" /> <b>Delete.</b> Removes the selected components from the list;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/assets/icons/svg/basic/cleanup.svg' ?>" /> <b>Clear.</b> Removes all components from the list;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/widgets/images/grid/grid-edit.svg' ?>" /> <b>Edit.</b> Opens a form to edit the selected component;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/widgets/images/grid/grid-select.svg' ?>" /> <b>Select.</b> Manages the selection of components in the list;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/assets/icons/svg/basic/refresh.svg' ?>" /> <b>Refresh.</b> Updates the list of components;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/widgets/images/grid/grid-profiling-off.svg' ?>" /> <b>Entry Profiling.</b> Expands or collapses the navigation panel to display information about a component;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/assets/icons/svg/basic/help.svg' ?>" /> <b>Help.</b> Opens the help window for the current list;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/assets/icons/svg/basic/search.svg' ?>" /> <b>Search.</b> Opens a form for searching components within the list.</li>
+    </ul>
+</article>
